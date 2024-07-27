@@ -1,0 +1,30 @@
+div{
+    background-color:rgb(75, 166, 148);
+    color:white;
+    
+}
+
+input{
+    border-color: rgb(75, 166, 148);
+  
+}
+
+select{
+    border-color:rgb(9, 243, 196);
+    border-width:2px;
+}
+
+button{
+    color: white;
+    background-color:rgb(75, 166, 148) ;
+}
+
+
+center{
+    background-color: aliceblue;
+}
+
+hr{
+    color:blue;
+
+}
