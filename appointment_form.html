@@ -1,8 +1,106 @@
-<html>
-  <body>
-    <p>
-      Appointment Form
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>
+            Doctor Appointment Request form
+        </h2>
+        <p>
+            fill the form belowand we will get back soon to you for more updates and plan your Appointment.
+        </p><br>
+        <br>
+    
+       
+    
+    
+    <form>
+        
 
+    
+        Name<br>
+        <input type="text" placeholder="first name" size="29">
+        <input type="text" placeholder="last name" size="29"><br>
+        <br>
+        Date of Birth &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;  gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; phone number<br>
+        &nbsp; &nbsp; &nbsp; &nbsp;<input  type="date" placeholder="please select a day" size="25"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+        
+        <select id="gender" name="gender">
+            <option value="blank" aria-placeholder="please select">please select</option>
+            <option value="male">male</option>
+            <option value="female">female</option> 
+            <option value="other">other</option>
+            
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" placeholder="Enter phone nymber" size="20"><br>
+        <br>
+
+        Address<br>
+        <input type="text" placeholder="street address" size="66"><br>
+        <br>
+         <input type="text" placeholder="street address line 2" size="66"><br>
+        <br>
+
+         <input type="text" placeholder="city" size="30">
+         <input type="text" placeholder="state/province" size="30"><br>
+         <br>
+         <input type="text" placeholder="postal/zip code" size="62"><br>
+         <br>
+
+         Email<br>
+         <input type="text" placeholder="ex: myname@example.com" size="30"><br>
+
+         
+    </form>
+    <p>
+        Have you ever applied to our facility before?
     </p>
-      </body>
+  
+    <input type="radio" name="fruits" id="yes">
+    <label for="yes">yes</label>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="radio" name="fruits" id="No">
+
+    <label for="No">No</label><br>
+    <br>
+
+    <p>
+        Which department would you like to get an appointment form?
+    </p>
+    <select id="Department" name="Department">
+        <option value="blank" placeholder="Enter department name">choose below option</option>
+        <option value="out patient department">OPD</option>
+        <option value="surgical Department">surgical Department</option> 
+        <option value="nursing Department">nursing Department</option>
+        
+    </select><br>
+    <br>
+
+    <p>
+        Which procedure do you want to make an appointment for?
+    </p>
+    <select id="Department" name="Department">
+        <option value="blank" placeholder="which procedure do ypu want">which procedure do ypu want</option>
+        <option value="my child needs to come in for a check-up">my child needs to come in for a check-up</option>
+        <option value="I need to renew my prescription">I need to renew my prescription</option> 
+        <option value="the doctor wants to see me again in two week's time">the doctor wants to see me again in two week's time</option>
+        
+    </select>
+    
+    <br>
+    <br>
+    <hr>
+    preferred Appointment Date
+    <hr>
+<center>
+    <button type="Submit" style=color:red>submit</button>
+</center>
+   
+</center>
+</body>
 </html>
