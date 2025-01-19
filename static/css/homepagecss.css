@@ -1,0 +1,88 @@
+/* Basic styling */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Services section */
+.services h2 {
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 25%;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card img {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+/* About section */
+.about {
+    margin-bottom: 50px;
+}
+
+/* Testimonials section */
+.testimonials h2 {
+    margin-bottom: 30px;
+}
+
+.testimonial-slider {
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Add more CSS for responsiveness and styling as needed */

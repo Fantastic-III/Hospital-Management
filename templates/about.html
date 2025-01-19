@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    .about-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+
+    .about-header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .mission-section, .history-section, .team-section, .contact-section {
+        margin-bottom: 20px;
+    }
+
+    .team-member {
+        margin-bottom: 10px;
+    }
+
+    .contact-info p {
+        margin: 5px 0;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+</style>
+
+<div class="about-container">
+    <h1 class="about-header">About Us</h1>
+
+    <div class="mission-section">
+        <h2>Our Mission</h2>
+        <p>Our mission is to provide exceptional healthcare services to our community with compassion, integrity, and excellence. We strive to create a healing environment that emphasizes respect, dignity, and quality care for all patients.</p>
+    </div>
+
+    <div class="history-section">
+        <h2>Our History</h2>
+        <p>Founded in 2005, our hospital has been serving the community for over 20 years. What started as a small clinic has grown into a state-of-the-art medical facility with a wide range of specialties and services. Over the years, we have expanded our infrastructure, incorporated the latest medical technologies, and continuously improved our patient care.</p>
+    </div>
+
+    <div class="team-section">
+        <h2>Meet Our Team</h2>
+        <p>Our dedicated team of healthcare professionals is committed to providing the best possible care to our patients. From our experienced doctors and nurses to our skilled support staff, everyone plays a vital role in maintaining the high standards of our hospital.</p>
+        <div class="team-member">
+            <strong>Dr. Ravi Kumar</strong> - Chief Medical Officer
+        </div>
+        <div class="team-member">
+            <strong>Dr. Meera Joshi</strong> - Head of Surgery
+        </div>
+        <div class="team-member">
+            <strong>Dr. Vikram Desai</strong> - Head of Pediatrics
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+            <p><img class="icon" src="/static/images/phone-icon.png" alt="Phone"> +91-1234567890</p>
+            <p><img class="icon" src="/static/images/email-icon.png" alt="Email"> contact@hospital.com</p>
+            <p><img class="icon" src="/static/images/address-icon.png" alt="Address"> 1234 Hospital Lane, Mumbai, Maharashtra, India</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

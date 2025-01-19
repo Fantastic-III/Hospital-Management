@@ -1,0 +1,57 @@
+{% extends 'baselogged.html' %}
+{% block content %}
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .appointment-card {
+        border: 2px solid #4CAF50;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px;
+        width: 500px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+    }
+    .appointment-card:hover {
+        box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.5);
+    }
+    .appointment-card .label {
+        font-weight: bold;
+        color: #4CAF50;
+        margin-bottom: 5px;
+    }
+    .appointment-card .value {
+        margin-bottom: 10px;
+    }
+</style>
+
+<h1 align="center">Your Appointment History</h1>
+<div class="container">
+    {% for appointment in app_data %}
+        <div class="appointment-card">
+            <div class="label">Patient Name:</div>
+            <div class="value">{{ appointment.patient_name }}</div>
+            <div class="label">Gender:</div>
+            <div class="value">{{ appointment.gender }}</div>
+            <div class="label">DOB:</div>
+            <div class="value">{{ appointment.dob }}</div>
+            <div class="label">Problem:</div>
+            <div class="value">{{ appointment.problem_organ }}</div>
+            <div class="label">Description Given:</div>
+            <div class="value">{{ appointment.problem_description }}</div>
+            <div class="label">Appointment Time Batch:</div>
+            <div class="value">{{ appointment.time_batch }}</div>
+            <div class="label">Appointment Date:</div>
+            <div class="value">{{ appointment.appointment_date }}</div>
+            <div class="label">Doctor Assigned:</div>
+            <div class="value">{{ appointment.doctor.name }}</div>
+        </div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}

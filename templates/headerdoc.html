@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Name</title>
+    <link rel="stylesheet" href="/static/css/homepagecss.css">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+          background-color: #645a5a;
+          color: #fff;
+          padding: 10px 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0; }
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+
+    nav ul li a:hover
+    {
+        color: #ffd700; /* Golden color on hover */
+    }
+    nav ul li.active a {
+        color: #ffd700; /* Golden color for active link */
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="{% if request.path == '/doc-homepage/' %}active{% endif %}"><a href="{% url 'DocHomePage' %}">Home</a></li>
+                <li class="{% if request.path == '/doc-homepage/todays-appointments' %}active{% endif %}"><a href="{% url 'TodaysAppointments' %}">Today's Appointments</a></li>
+                <li class="{% if request.path == '/doc-homepage/doctor-settings' %}active{% endif %}"><a href="{% url 'DocSettings' %}">Settings</a></li>
+            </ul>
+        </nav>
+    </header>

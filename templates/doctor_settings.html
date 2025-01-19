@@ -1,0 +1,43 @@
+{% include 'headerdoc.html' %}
+    <style>
+    .profile-container {
+        border: 2px solid #4CAF50;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px auto;
+        width: 700px;
+        background-color: #f9f9f9;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    .profile-container h1 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .profile-container button {
+        background-color: red;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 5px 0;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .profile-container button a {
+        color: white;
+        text-decoration: none;
+    }
+    .profile-container button a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<div class="profile-container">
+    <h1>User Name: {{ doctor.name }}</h1>
+    <h1>Password: {{ doctor.password }}</h1>
+    <button class="logout"><a href="{% url 'Logout' %}">Logout</a></button>
+</div>

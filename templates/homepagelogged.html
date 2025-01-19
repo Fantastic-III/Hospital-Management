@@ -1,0 +1,232 @@
+{% include 'headerlogged.html' %}
+
+<style>
+    /* Basic styling */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Emergency Contact Styling */
+    .emergency {
+            background: #e74c3c;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+/* Container */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Hero section */
+.hero {
+    background: #3498db;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Services section */
+.services h2 {
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 25%;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card img {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* About section */
+.about {
+    margin-bottom: 50px;
+    background: #f9f9f9;
+}
+
+.card i {
+    font-size: 2rem;
+    color: #007bff; /* Or your preferred color */
+    margin-bottom: 15px;
+}
+
+/* Add more CSS for responsiveness and styling as needed */
+    .section {
+            padding: 30px;
+            text-align: center;
+        }
+
+
+
+/* Contact Us Styling */
+    .contact-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .contact-header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact-details {
+        margin-bottom: 20px;
+    }
+
+    .contact-details p {
+        margin: 10px 0;
+    }
+
+    .icon {
+        width: 50px;  /* Adjust the width to your preference */
+        height: 50px; /* Adjust the height to your preference */
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    .social-media {
+        text-align: center;
+    }
+
+    .social-media a {
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 100px;
+    }
+
+    .social-media a:hover {
+        color: #007bff;
+    }
+
+    /* Footer Styling */
+    footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+</style>
+
+<div class="emergency">
+        Emergency Contact: +1 (555) 123-4567
+</div>
+<div class="hero">
+        <h1>Welcome to Our Hospital</h1>
+        <p>Providing quality healthcare for the entire family.</p>
+</div>
+<div class="container">
+
+    <div class="services">
+        <h2 align="center">Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <i class="fas fa-general"></i>
+                <h3>General Checkup</h3>
+                <p>Comprehensive wellness evaluations.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Cardiology</h3>
+                <p>Expert heart care services.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-bone"></i>
+                <h3>Orthopedics</h3>
+                <p>Skilled orthopedic surgeons.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-ent"></i>
+                <h3>ENT</h3>
+                <p>Advanced care for ear, nose, and throat health.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-dentist"></i>
+                <h3>Dentistry</h3>
+                <p>Dedicated oral care and dental hygiene.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-plum"></i>
+                <h3>Pulmonology</h3>
+                <p>Expert care for lung and respiratory conditions.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-neph"></i>
+                <h3>Nephrology</h3>
+                <p>Specialized kidney health services.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section about" id="about">
+        <h2>About Us</h2>
+        <p>We are committed to providing high-quality healthcare services to our community.</p>
+        <p>With over 20 years of experience, we ensure the best medical care for our patients.</p>
+    </div>
+
+<div class="contact-container">
+    <h1 class="contact-header">Contact Us</h1>
+    <div class="contact-details">
+        <p><img class="icon" src="/static/images/phone-icon.png" alt="Phone"> +91-1234567890</p>
+        <p><img class="icon" src="/static/images/email-icon.png" alt="Email"> contact@hospital.com</p>
+        <p><img class="icon" src="/static/images/address-icon.png" alt="Address"> 1234 Hospital Lane, Mumbai, Maharashtra, India</p>
+    </div>
+    <br>
+    <h1 class="contact-header">Follow Us On</h1>
+    <div class="social-media">
+        <a href="https://facebook.com" target="_blank"><img class="icon" src="/static/images/facebook-icon.png" alt="Facebook"></a>
+        <a href="https://twitter.com" target="_blank"><img class="icon" src="/static/images/twitter-icon.png" alt="Twitter"></a>
+        <a href="https://instagram.com" target="_blank"><img class="icon" src="/static/images/instagram-icon.png" alt="Instagram"></a>
+    </div>
+</div>
+
+</div>
+</body>
+ <footer>
+        <p>© 2024 Hospital Management System</p>
+        <p>Terms of Service | Privacy Policy</p>
+    </footer>
+</html>

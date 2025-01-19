@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Name | Appointment Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #6cacec;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #7f8c8d;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #08bce5;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="time"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #7463f8;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        select {
+            background-color: white;
+        }
+
+        .gender-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .gender-option {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .session-option {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .session_g {
+            display: flex;
+            gap: 10px;
+        }
+        .submit-btn {
+            background-color: #e0ecec;
+            color: rgb(18, 18, 18);
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #23dd15;
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+
+        #dob{
+            max-width: 700px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Patient Appointment Form</h1>
+            <p>Please fill out the form below to schedule your appointment</p>
+        </div>
+
+        <form method="post">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col form-group">
+                    <label for="patient-name">First Name</label>
+                    <input type="text" id="patient-name" name="patient-name" required>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="gender-group">
+                    <div class="gender-option">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="gender-option">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="gender-option">
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <br><br>
+
+            <div class="form-group">
+                <label for="problem-organ">Select Problem Organ</label>
+                <select id="problem-organ" name="problem-organ" required>
+                    <option value="General">General Checkup</option>
+                    <option value="Bones">Bones</option>
+                    <option value="ENT">Eyes/Nose/Tongue</option>
+                    <option value="Mouth">Mouth</option>
+                    <option value="Throat">Throat</option>
+                    <option value="Heart">Heart</option>
+                    <option value="Lungs">Lungs</option>
+                    <option value="Kidneys">Kidneys</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="problem-description">Description of Problem</label>
+                <textarea id="problem-description" name="problem-description" required></textarea>
+            </div>
+
+            <br>
+
+            <div class="session_g">
+                <label>Select a Session:</label>
+                <div class="session-option">
+                    <input type="radio" id="morning" name="session-batch" value="morning">
+                    <label for="morning">Morning</label> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="evening" name="session-batch" value="evening">
+                    <label for="evening">Evening</label>
+                </div>
+            </div>
+
+            <br>
+
+            <button type="submit" class="submit-btn">SUBMIT </button>
+        </form>
+    </div>
+</body>
+</html>
