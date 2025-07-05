@@ -18,8 +18,8 @@ This repository houses the code for a Django-based web application that serves a
 
 ## Team
 
-* **UI/Frontend Design:** (Kalpesh Gawas)[https://github.com/Kalpesh-Gawas]
-* **Backend Development & Database Management:** (Onkar Gite)[https://github.com/onkar0127], (Sailesh Bhoite)[https://github.com/Sailesh-Bhoite]
+* **UI/Frontend Design:** [Kalpesh Gawas](https://github.com/Kalpesh-Gawas)
+* **Backend Development & Database Management:** [Onkar Gite](https://github.com/onkar0127), [Sailesh Bhoite](https://github.com/Sailesh-Bhoite)
 
 ## Lessons Learned
 
