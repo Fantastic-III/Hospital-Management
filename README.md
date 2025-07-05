@@ -18,8 +18,8 @@ This repository houses the code for a Django-based web application that serves a
 
 ## Team
 
-* **UI/Frontend Design:** @Kalpesh-Gawas
-* **Backend Development & Database Management:** @onkar0127, @Sailesh-Bhoite
+* **UI/Frontend Design:** (Kalpesh Gawas)[https://github.com/Kalpesh-Gawas]
+* **Backend Development & Database Management:** (Onkar Gite)[https://github.com/onkar0127], (Sailesh Bhoite)[https://github.com/Sailesh-Bhoite]
 
 ## Lessons Learned
 
@@ -42,7 +42,7 @@ This project provided valuable hands-on experience in various web development as
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/Fantastic-III/Hospital-Management
     ```
 
 2.  **Create a virtual environment (recommended):**
