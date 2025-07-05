@@ -1,41 +1,3 @@
-# Hospital Database Management Website
-
-## Features
-
-* Appointment Booking: Patients can conveniently book appointments online.
-
-* Appointment History: Patients can easily view their past appointment records.
-
-* Doctor Portal: Doctors can log in to access their scheduled appointments and view patient details.
-
-* User Sessions: User details are securely stored in sessions, eliminating the need for frequent logins.
-
-## Team Members
-
-* **UI/Frontend Design:** @KalpeshGawas (Assuming this is their GitHub username)
-* **Backend Development & Database Management:** @OnkarGite, @SaileshBhoite (Assuming these are their GitHub usernames)
-
-## Technologies Used
-
-* **Frontend:** HTML, CSS
-* **Backend Framework:** Django (Python)
-* **Database:** Django ORM, SQLite3
-
-## Lessons Learned
-
-* **Core Django Concepts:**
-    * Route/URL management
-    * Connecting view functions to URLs
-* **Frontend Integration:**
-    * Rendering HTML, CSS, and image files
-* **Data Handling:**
-    * Getting data from and sending data to Database and HTML file
-    * Using Sessions to store data
-        * Example: Maintaining user login state
-* **Navigation:**
-    * Page Redirection
- 
-
 # Django Hospital Database Management System
 
 This repository houses the code for a Django-based web application that serves as a Hospital Database Management System (DBMS).
@@ -56,8 +18,8 @@ This repository houses the code for a Django-based web application that serves a
 
 ## Team
 
-* **UI/Frontend Design:** @KalpeshGawas (Assuming this is their GitHub username)
-* **Backend Development & Database Management:** @OnkarGite, @SaileshBhoite (Assuming these are their GitHub usernames)
+* **UI/Frontend Design:** @Kalpesh-Gawas
+* **Backend Development & Database Management:** @onkar0127, @Sailesh-Bhoite
 
 ## Lessons Learned
 
